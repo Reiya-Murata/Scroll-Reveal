@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- section1 -->
-  <section class="sec-01">
+  <section class="sec-1">
     <div class="container">
       <h2 class="main-title">
         Scroll Reveal
@@ -26,19 +26,19 @@
         </div>
         <div class="text-box">
           <h3>Rachel Code</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim modi architecto fuga alias voluptatum quos dolorum dolores saepe quo.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicin</p>
         </div>
       </div>
-      <div class="medea-icons">
-        <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+      <div class="media-icons">
+        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
   </section>
   <!-- section2 -->
-  <section class="sec-02">
+  <section class="sec-2">
     <div class="container">
       <h3 class="section-title">Rachel Titorial</h3>
       <div class="content">
@@ -79,8 +79,30 @@
         </div>
     </div>
     </div>
-
   </section>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ 
+      reset: true,
+      distance:"60px",
+      duretion:2000,
+      delay:200,
+    });
+    ScrollReveal().reveal('.main-title,.section-title', { delay: 200 ,origin:"left"});
+    ScrollReveal().reveal('.sec-1 .image,info', { delay: 600 ,origin:"bottom"});
+    ScrollReveal().reveal('.text-box', { delay: 700 ,origin:"right"});
+    ScrollReveal().reveal('.media-icons i', {
+        delay: 200 ,
+        origin:"bottom",
+        interval:200,});
+    ScrollReveal().reveal('.media-info li', {
+    delay:500 ,
+    origin:"left",
+    interval:200,});
+    ScrollReveal().reveal('.sec-2 .image,.sec-3 .image', {
+    delay:500 ,
+    origin:"top",});
+</script>
 
 </body>
 </html>
